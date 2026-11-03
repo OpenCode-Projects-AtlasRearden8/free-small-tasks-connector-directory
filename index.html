@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trade Small Tasks for Free - A Plain-English Directory</title>
+  <meta name="description" content="A free, plain-English directory of noticeboards, library skill-swap nights, tool libraries, and mutual-aid groups where neighbors trade small tasks at no cost. No paid listings.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128172;</text></svg>">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#cards">Skip to the directory</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow">The Small Tasks Connector</p>
+      <h1>Trade Small Tasks for Free</h1>
+      <p class="lede">
+        A plain-English directory of places where neighbors trade small tasks at no cost:
+        community noticeboards, library skill-swap nights, neighbourhood tool libraries,
+        and mutual-aid groups. Every listing explains <strong>what it is</strong>,
+        <strong>who it's for</strong>, and <strong>how to join</strong> - in words a friend would use.
+      </p>
+      <ul class="promise-list" aria-label="Our promises">
+        <li>&#10003; No paid listings</li>
+        <li>&#10003; No personal data collected</li>
+        <li>&#10003; Each entry shows a verified-free date and a recheck date</li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap" id="directory" aria-labelledby="directory-heading">
+      <h2 id="directory-heading" class="section-title">The Directory</h2>
+
+      <div class="toolbar" role="group" aria-label="Filters">
+        <div class="filter-chips" id="category-filters">
+          <button class="chip is-active" data-filter="all" aria-pressed="true">All (0)</button>
+        </div>
+        <span class="live-region" id="filter-status" role="status" aria-live="polite"></span>
+        <label class="search-label" for="search">Search</label>
+        <input id="search" type="search" placeholder="Search blurbs, titles, notes..." autocomplete="off">
+      </div>
+
+      <p class="meta-line">
+        Page verified on <time datetime="2026-11-03">Nov 3, 2026</time>.
+        Next full recheck: <time datetime="2027-02-03">Feb 3, 2027</time>.
+        When in doubt, always confirm the listing is still free on its own site.
+      </p>
+
+      <div class="card-grid" id="cards" aria-live="polite" aria-label="Directory listings"></div>
+      <p class="no-results hidden" id="no-results">
+        Nothing matches those filters. Try clearing search or picking &ldquo;All&rdquo;.
+      </p>
+    </section>
+
+    <section class="wrap guide" id="guide" aria-labelledby="guide-heading">
+      <h2 id="guide-heading" class="section-title">Mini-guide: How to Volunteer Your Skill</h2>
+      <p class="guide-lede">
+        You already have a skill people need: reading, driving, spreadsheeting, dog-walking,
+        listening. Here is a six-step path from &ldquo;I could probably help&rdquo; to a real,
+        repeating, free offer.
+      </p>
+
+      <ol class="guide-steps">
+        <li>
+          <h3>Pick one small skill you enjoy</h3>
+          <p>&ldquo;I can change a bike tire in ten minutes&rdquo; beats &ldquo;I'm good at lots of things.&rdquo; Small is specific, and specific gets replies.</p>
+        </li>
+        <li>
+          <h3>Name your listener, then begin gently</h3>
+          <p>Write for one real person - a neighbor who has never used the tool before. Start with the problem they have today, in a friendly voice like you'd use with an old friend. No jargon without plain translation.</p>
+        </li>
+        <li>
+          <h3>Write the world's easiest offer</h3>
+          <p>Use three lines: <strong>What</strong> you'll do, <strong>When</strong> you're free, and <strong>How</strong> to reach you (an email alias is plenty). Example: &ldquo;Free 20-minute zipper fixes, Sat mornings, email zips4u@example.org.&rdquo;</p>
+        </li>
+        <li>
+          <h3>Post it in two places from this directory</h3>
+          <p>One paper, one pixel: pin it on a library board and post it in one online group (or the reverse). Two channels, zero dollars, done before lunch.</p>
+        </li>
+        <li>
+          <h3>Mind the guardrails</h3>
+          <p>Never share your home address in a public post. Use a separate email alias. Meet-ups in public places. If money feels expected anyway, it's not the free lane - walk away politely.</p>
+        </li>
+        <li>
+          <h3>Log it and repeat</h3>
+          <p>Keep one note on your phone: date, task, person, whether you'd do it again. After three entries you'll know your real availability - then re-post on your recheck date.</p>
+        </li>
+      </ol>
+
+      <div class="guide-note">
+        <h3>A note on tone</h3>
+        <p>
+          Explain things the way a friend would: plainly, step by step, never condescending.
+          If a group's orientation is confusing, that's a bug in the group, not in you - just email
+          the organizer and ask them to, please, explain like you're five. Most are delighted to.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>
+        Built with plain HTML, CSS, and a little JavaScript - no tracking, no accounts,
+        no personal data. Data lives in <code>data/cards.json</code>; the link tester lives
+        in <code>tests/linktest.mjs</code>.
+      </p>
+      <p>
+        &copy; 2026 Asdale Dynamics, LLC. Licensed under the
+        <a href="https://opensource.org/license/mit">MIT License</a>.
+        Educational directory only - not affiliated with any listed organization,
+        and nothing here is professional, medical, or legal advice.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
